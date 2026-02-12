@@ -1,0 +1,29 @@
+Some sample command lines to test it with PowerShell COM Object Test Commands for IDispatch Logger
+Note: each new run will clear the debug print window fresh because of the <cls> message in the injection dll
+
+# Test 1: FileSystemObject - Create folder and file
+injector.exe powershell.exe -c "$fso = New-Object -ComObject Scripting.FileSystemObject; $temp = $fso.GetSpecialFolder(2); Write-Host $temp.Path; $file = $fso.CreateTextFile([System.IO.Path]::Combine($temp.Path, 'test.txt'), $true); $file.WriteLine('Test from PowerShell'); $file.Close(); Write-Host 'File created'"
+
+# Test 2: WScript.Shell - Run calc and expand env vars  
+injector.exe powershell.exe -c "$shell = New-Object -ComObject WScript.Shell; $windir = $shell.ExpandEnvironmentStrings('%WINDIR%'); Write-Host \"Windows: $windir\"; $shell.Popup('Test from PowerShell', 2, 'IDispatch Test', 64); $shell.Run('calc.exe', 1, $false)"
+
+# Test 3: Multiple COM objects - Dictionary, XMLHTTP
+injector.exe powershell.exe -c "$dict = New-Object -ComObject Scripting.Dictionary; $dict.Add('key1', 'value1'); $dict.Add('key2', 'value2'); Write-Host \"Count: $($dict.Count)\"; $http = New-Object -ComObject MSXML2.XMLHTTP; Write-Host 'Created XMLHTTP'"
+
+# Test 4: WMI via COM (not Get-WmiObject)
+injector.exe powershell.exe -c "$wmi = [System.Runtime.InteropServices.Marshal]::GetActiveObject('WinMgmts:'); $procs = $wmi.ExecQuery('SELECT * FROM Win32_Process WHERE Name=\"svchost.exe\"'); Write-Host \"Found $($procs.Count) svchost processes\""
+
+# Test 5: Shell.Application - Browse for folder
+injector.exe powershell.exe -c "$shell = New-Object -ComObject Shell.Application; $folder = $shell.NameSpace(0x24); Write-Host \"Windows folder: $($folder.Title)\"; $items = $folder.Items(); Write-Host \"Items: $($items.Count)\""
+
+# Test 6: Internet Explorer COM (if available)
+injector.exe powershell.exe -c "$ie = New-Object -ComObject InternetExplorer.Application; $ie.Visible = $false; $ie.Navigate2('about:blank'); Start-Sleep -Seconds 1; Write-Host \"IE Location: $($ie.LocationURL)\"; $ie.Quit()"
+
+# Test 7: Combined test - Chain multiple COM objects
+injector.exe powershell.exe -c "$fso = New-Object -ComObject Scripting.FileSystemObject; $shell = New-Object -ComObject WScript.Shell; $dict = New-Object -ComObject Scripting.Dictionary; $desktop = $shell.SpecialFolders.Item('Desktop'); Write-Host \"Desktop: $desktop\"; $dict.Add('desktop', $desktop); $temp = $fso.GetSpecialFolder(2); $dict.Add('temp', $temp.Path); Write-Host \"Dict has $($dict.Count) items\"; foreach($key in $dict.Keys()) { Write-Host \"$key = $($dict.Item($key))\" }"
+
+# Test 8: ADODB.Stream (often used by malware)
+injector.exe powershell.exe -c "$stream = New-Object -ComObject ADODB.Stream; $stream.Type = 2; $stream.Charset = 'utf-8'; $stream.Open(); $stream.WriteText('Test data'); $stream.Position = 0; $text = $stream.ReadText(); Write-Host \"Stream data: $text\"; $stream.Close()"
+
+# Shorter one-liner for quick testing:
+injector.exe powershell.exe -c "$fso=New-Object -COM Scripting.FileSystemObject;$sh=New-Object -COM WScript.Shell;Write-Host $fso.GetSpecialFolder(2).Path;Write-Host $sh.CurrentDirectory"

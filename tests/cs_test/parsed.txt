@@ -1,0 +1,24 @@
+fso.BuildPath("C:\", "test.txt")  ' Returns: "C:\test.txt"
+fso.GetDrive("C:")  ' Returns: Object:0x054D31A8
+fso.GetDrive.DriveType  ' Returns: 2
+fso.Drives  ' Returns: Object:0x054D31C8
+fso.Drives._NewEnum  ' Returns: IUnknown:0x054D31E0
+fso.Drives._NewEnum  ' Returns: IUnknown:0x054D31E0
+fso.GetDrive.DriveLetter  ' Returns: "C"
+fso.Drives._NewEnum[item].DriveLetter  ' Returns: "D"
+fso.Drives._NewEnum[item].DriveLetter  ' Returns: "E"
+fso.GetFolder("C:\")  ' Returns: Object:0x054D32B4
+fso.GetFolder.Name  ' Returns: ""
+fso.GetFolder.SubFolders  ' Returns: Object:0x054D32F0
+fso.GetFolder.SubFolders.Count  ' Returns: 31
+fso.GetFolder.SubFolders._NewEnum  ' Returns: IUnknown:0x054D3300
+fso.GetFolder.SubFolders._NewEnum  ' Returns: IUnknown:0x054D3300
+fso.GetFolder.SubFolders._NewEnum[item].Name  ' Returns: "$Recycle.Bin"
+fso.GetFolder.SubFolders._NewEnum[item].ParentFolder  ' Returns: Object:0x054D32B4
+fso.GetFolder.Name  ' Returns: ""
+fso.CreateTextFile("C:\Users\home\AppData\Local\Temp\tmpv531zs.tmp", True)  ' Returns: Object:0x054D33C0
+fso.CreateTextFile.WriteLine("test data")
+fso.CreateTextFile.Close
+fso.OpenTextFile("C:\Users\home\AppData\Local\Temp\tmpnpj2j1.tmp", 1)  ' Returns: Object:0x054D3628
+fso.OpenTextFile.ReadLine  ' Returns: "line1"
+fso.OpenTextFile.Close

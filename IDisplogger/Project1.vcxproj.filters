@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="distorm">
+      <UniqueIdentifier>{b7ea840f-0819-4bc9-b6ca-1f9ca41b2830}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rd_Party\NtHookEngine.h" />
+    <ClInclude Include="comdefs.h" />
+    <ClInclude Include="3rd_Party\diStorm3.5\config.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\decoder.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\distorm.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\instructions.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\insts.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\mnemonics.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\operands.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\prefix.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\textdefs.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\wstring.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_Party\diStorm3.5\x86defs.h">
+      <Filter>distorm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DispatchLogger.cpp" />
+    <ClCompile Include="3rd_Party\NtHookEngine.cpp" />
+    <ClCompile Include="3rd_Party\diStorm3.5\decoder.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\distorm.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\instructions.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\insts.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\mnemonics.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\operands.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\prefix.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_Party\diStorm3.5\textdefs.c">
+      <Filter>distorm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

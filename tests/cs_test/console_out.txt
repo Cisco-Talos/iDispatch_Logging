@@ -1,0 +1,77 @@
+C:\Users\home\Desktop\IDisp_logger>injector.exe "C:\Users\home\Desktop\cs_test\ConsoleApp1\bin\x86\Debug\net8.0\ConsoleApp1.exe"
+=== IDispatch Hook Injector v2 ===
+For use with VB6 Debug Window
+[+] Debug window already running
+[*] Using DLL: C:\Users\home\Desktop\IDisp_logger\iDispLogger.dll
+[*] Creating process: C:\Users\home\Desktop\cs_test\ConsoleApp1\bin\x86\Debug\net8.0\ConsoleApp1.exe
+[+] Process created (PID: 15220)
+[+] DLL injected successfully
+[+] Process launched with hooks installed
+[+] Check debug window for IDispatch activity
+[+] Waiting for child to finish
+=============================================
+=== FSO Proxy Hole Tester ===
+Watch your debug window for gaps in logging!
+--- Creating FileSystemObject via Activator ---
+FSO created: System.__ComObject
+--- Test 1: Basic IDispatch call ---
+Calling fso.BuildPath('C:\\', 'test.txt')...
+Result: C:\test.txt
+CHECK: Did you see BuildPath in your log?
+--- Test 2: IUnknown Identity Check ---
+IUnknown #1: 0x38FDB90
+IUnknown #2: 0x38FDB90
+Same? True (should be true)
+--- Test 3: QI Escape Test (THE BIG ONE) ---
+IDispatchEx: not supported (hr=0x80004002)
+IPersist: not supported (hr=0x80004002)
+IProvideClassInfo: ptr=0x54D2B14, IUnknown=0x54D2B10 *** ESCAPED! ***
+  ^ This interface returned the REAL object's IUnknown!
+  ^ .NET now has a back-door to bypass your proxy!
+IConnectionPointContainer: not supported (hr=0x80004002)
+ISupportErrorInfo: not supported (hr=0x80004002)
+--- Test 4: Child Object (GetDrive) ---
+Calling fso.GetDrive('C:')...
+Drive object: System.__ComObject
+CHECK: Was GetDrive logged? Is drive a proxy?
+Calling drive.DriveType...
+DriveType: 2
+CHECK: Was DriveType logged? If not, child escaped!
+--- Test 5: Enumerator (Drives collection) ---
+Getting fso.Drives...
+Drives collection: System.__ComObject
+Enumerating drives...
+  Found drive: C
+  Found drive: D
+  Found drive: E
+CHECK: Did you see each drive access logged?
+--- Test 6: Deep Nesting (GetFolder -> SubFolders) ---
+Getting fso.GetFolder('C:\\')...
+Folder:
+Getting folder.SubFolders...
+SubFolders count: 31
+CHECK: Is SubFolders proxied? Is Count logged?
+--- Test 7: ParentFolder Round-trip ---
+Got subfolder: $Recycle.Bin
+Getting sub.ParentFolder...
+Parent:
+CHECK: Is ParentFolder the same proxy or did it escape?
+--- Test 8: CreateTextFile (new object creation) ---
+Creating text file: C:\Users\home\AppData\Local\Temp\tmpv531zs.tmp
+TextStream type: System.__ComObject
+Calling textStream.WriteLine('test')...
+CHECK: Was WriteLine logged?
+Calling textStream.Close()...
+--- Test 9: OpenTextFile ---
+Opening: C:\Users\home\AppData\Local\Temp\tmpnpj2j1.tmp
+Reader type: System.__ComObject
+Calling reader.ReadLine()...
+Read: line1
+CHECK: Was ReadLine logged?
+=== Tests Complete ===
+Summary of likely holes in your proxy:
+1. QI for non-IDispatch interfaces returns raw pointers
+2. This breaks COM identity (different IUnknown)
+3. .NET might cache the 'escaped' pointer and bypass you
+Check your debug log for any gaps in coverage!
+C:\Users\home\Desktop\IDisp_logger>

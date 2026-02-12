@@ -1,0 +1,501 @@
+[3b74:2e4c] ========================================
+[3b74:2e4c] [INIT] DispatchLogger injected into PID=15220
+[3b74:2e4c] [INIT] Debug window: 0x00D90F4C
+[3b74:2e4c] [INIT] CoCreateInstance at 0x76F0AD00
+[3b74:2e4c] [INIT] Successfully hooked CoCreateInstance!
+[3b74:2e4c] [INIT] Original function: 0x05410000
+[3b74:2e4c] [INIT] Hooked CoGetClassObject
+[3b74:2e4c] [INIT] Hooked CLSIDFromProgID
+[3b74:2e4c] [INIT] Hooked GetActiveObject
+[3b74:2e4c] [INIT] Hooked CoGetObject
+[3b74:2e4c] [INIT] Hooked MkParseDisplayName
+[3b74:2e4c] ========================================
+[3b74:25d0] [CoGetClassObject] FileSystemObject ({0D43FE01-F093-11CF-8940-00A0C9054228}) Context=0x00000015
+[3b74:25d0] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[3b74:25d0] [HOOK] CoCreateInstance SUCCESS: Object=0x77090058
+[3b74:25d0] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[3b74:25d0] [CoGetClassObject] Got IClassFactory for FileSystemObject - WRAPPING!
+[3b74:25d0] [FACTORY] Created factory proxy for FileSystemObject
+[3b74:25d0] [CoGetClassObject] !!! Factory wrapped!
+[3b74:25d0] [FACTORY] CreateInstance: FileSystemObject requesting IUnknown
+[3b74:25d0] [FACTORY] CreateInstance SUCCESS: Object at 0x054D2B10
+[3b74:25d0] [FACTORY] Object supports IDispatch - WRAPPING!
+[3b74:25d0] [PROXY] Created proxy #1 for FileSystemObject (Original: 0x054D2B10)
+[3b74:25d0] [FACTORY] !!! Replaced object with proxy!
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [FACTORY] Destroying factory proxy for FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface: IUnknown for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=1
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] GetTypeInfoCount: FileSystemObject
+[3b74:25d0] [PROXY #1] GetTypeInfo: FileSystemObject (Index=0)
+[3b74:25d0] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[3b74:25d0] [HOOK] CoCreateInstance SUCCESS: Object=0x77090058
+[3b74:25d0] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[3b74:25d0] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[3b74:25d0] [HOOK] CoCreateInstance SUCCESS: Object=0x77090058
+[3b74:25d0] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.BuildPath (METHOD PROPGET ) ArgCount=2
+[3b74:25d0] [PROXY #1]     Arg[0]: "C:\"
+[3b74:25d0] [PROXY #1]     Arg[1]: "test.txt"
+[3b74:25d0] [PROXY #1] <<< Result: "C:\test.txt" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=4
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatchEx for FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x00000000
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.GetDrive (METHOD PROPGET ) ArgCount=1
+[3b74:25d0] [PROXY #1]     Arg[0]: "C:"
+[3b74:25d0] [PROXY #1] <<< Result: IDispatch:0x054D31A8 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #2 for FileSystemObject.GetDrive (Original: 0x054D31A8)
+[3b74:25d0] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #2] QueryInterface: IUnknown for FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=1
+[3b74:25d0] [PROXY #2] QueryInterface: IDispatch for FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #2] GetTypeInfoCount: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] GetTypeInfo: FileSystemObject.GetDrive (Index=0)
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: IDispatch for FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [PROXY #2] >>> Invoke: FileSystemObject.GetDrive.DriveType (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #2] <<< Result: 2 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.Drives (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #1] <<< Result: IDispatch:0x054D31C8 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #3 for FileSystemObject.Drives (Original: 0x054D31C8)
+[3b74:25d0] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #3] QueryInterface: IUnknown for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=2
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=1
+[3b74:25d0] [PROXY #3] QueryInterface: IDispatch for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=2
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=2
+[3b74:25d0] [PROXY #3] GetTypeInfoCount: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] GetTypeInfo: FileSystemObject.Drives (Index=0)
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: IDispatch for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [PROXY #3] >>> Invoke: FileSystemObject.Drives._NewEnum (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #3] <<< Result: IUnknown:0x054D31E0 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #3] !!! Returned IUnknown is IEnumVARIANT - wrapping enumerator!
+[3b74:25d0] [ENUM] Created enumerator proxy for 'FileSystemObject.Drives._NewEnum' (Original: 0x054D31E0)
+[3b74:25d0] [PROXY #3] !!! Replaced with EnumVARIANT proxy
+[3b74:25d0] [ENUM] Destroying enumerator proxy for 'FileSystemObject.Drives._NewEnum'
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=2
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [PROXY #3] QueryInterface: FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #3] QueryInterface: IDispatch for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=4
+[3b74:25d0] [PROXY #3] QueryInterface: IUnknown for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=5
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=4
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [PROXY #3] QueryInterface: IDispatch for FileSystemObject.Drives
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=4
+[3b74:25d0] [PROXY #3] AddRef: FileSystemObject.Drives -> RefCount=5
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=4
+[3b74:25d0] [PROXY #3] >>> Invoke: FileSystemObject.Drives._NewEnum (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #3] <<< Result: IUnknown:0x054D31E0 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #3] !!! Returned IUnknown is IEnumVARIANT - wrapping enumerator!
+[3b74:25d0] [ENUM] Created enumerator proxy for 'FileSystemObject.Drives._NewEnum' (Original: 0x054D31E0)
+[3b74:25d0] [PROXY #3] !!! Replaced with EnumVARIANT proxy
+[3b74:25d0] [PROXY #3] Release: FileSystemObject.Drives -> RefCount=3
+[3b74:25d0] [ENUM] >>> Next: Fetched 1 item(s) from 'FileSystemObject.Drives._NewEnum'
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [WRAP] Object 0x054D31A8 already proxied, returning existing
+[3b74:25d0] [ENUM] !!! Wrapped enumerated IDispatch item #0
+[3b74:25d0] [PROXY #2] QueryInterface: IUnknown for FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=4
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #2] QueryInterface: IDispatch for FileSystemObject.GetDrive
+[3b74:25d0] [PROXY #2] AddRef: FileSystemObject.GetDrive -> RefCount=3
+[3b74:25d0] [PROXY #2] >>> Invoke: FileSystemObject.GetDrive.DriveLetter (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #2] <<< Result: "C" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #2] Release: FileSystemObject.GetDrive -> RefCount=2
+[3b74:25d0] [ENUM] >>> Next: Fetched 1 item(s) from 'FileSystemObject.Drives._NewEnum'
+[3b74:25d0] [PROXY] Created proxy #4 for FileSystemObject.Drives._NewEnum[item] (Original: 0x054D3210)
+[3b74:25d0] [ENUM] !!! Wrapped enumerated IDispatch item #0
+[3b74:25d0] [PROXY #4] QueryInterface: IUnknown for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #4] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #4] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #4] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #4] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #4] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #4] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=1
+[3b74:25d0] [PROXY #4] QueryInterface: IDispatch for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #4] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #4] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #4] GetTypeInfoCount: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] GetTypeInfo: FileSystemObject.Drives._NewEnum[item] (Index=0)
+[3b74:25d0] [PROXY #4] QueryInterface: IDispatch for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #4] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #4] >>> Invoke: FileSystemObject.Drives._NewEnum[item].DriveLetter (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #4] <<< Result: "D" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #4] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [ENUM] >>> Next: Fetched 1 item(s) from 'FileSystemObject.Drives._NewEnum'
+[3b74:25d0] [PROXY] Created proxy #5 for FileSystemObject.Drives._NewEnum[item] (Original: 0x054D3248)
+[3b74:25d0] [ENUM] !!! Wrapped enumerated IDispatch item #0
+[3b74:25d0] [PROXY #5] QueryInterface: IUnknown for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #5] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #5] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #5] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #5] QueryInterface: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #5] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #5] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=1
+[3b74:25d0] [PROXY #5] QueryInterface: IDispatch for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #5] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #5] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #5] GetTypeInfoCount: FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] GetTypeInfo: FileSystemObject.Drives._NewEnum[item] (Index=0)
+[3b74:25d0] [PROXY #5] QueryInterface: IDispatch for FileSystemObject.Drives._NewEnum[item]
+[3b74:25d0] [PROXY #5] AddRef: FileSystemObject.Drives._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #5] >>> Invoke: FileSystemObject.Drives._NewEnum[item].DriveLetter (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #5] <<< Result: "E" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #5] Release: FileSystemObject.Drives._NewEnum[item] -> RefCount=2
+[3b74:25d0] [ENUM] >>> Next: Fetched 0 item(s) from 'FileSystemObject.Drives._NewEnum'
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.GetFolder (METHOD PROPGET ) ArgCount=1
+[3b74:25d0] [PROXY #1]     Arg[0]: "C:\"
+[3b74:25d0] [PROXY #1] <<< Result: IDispatch:0x054D32B4 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #6 for FileSystemObject.GetFolder (Original: 0x054D32B4)
+[3b74:25d0] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #6] QueryInterface: IUnknown for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=1
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: IDispatch for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #6] GetTypeInfoCount: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] GetTypeInfo: FileSystemObject.GetFolder (Index=0)
+[3b74:25d0] [PROXY #6] QueryInterface: IDispatch for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #6] >>> Invoke: FileSystemObject.GetFolder.Name (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #6] <<< Result: "" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #6] QueryInterface: IDispatch for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #6] >>> Invoke: FileSystemObject.GetFolder.SubFolders (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #6] <<< Result: IDispatch:0x054D32F0 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #7 for FileSystemObject.GetFolder.SubFolders (Original: 0x054D32F0)
+[3b74:25d0] [PROXY #6] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #7] QueryInterface: IUnknown for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=1
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #7] GetTypeInfoCount: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] GetTypeInfo: FileSystemObject.GetFolder.SubFolders (Index=0)
+[3b74:25d0] [PROXY #7] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] >>> Invoke: FileSystemObject.GetFolder.SubFolders.Count (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #7] <<< Result: 31 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] >>> Invoke: FileSystemObject.GetFolder.SubFolders._NewEnum (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #7] <<< Result: IUnknown:0x054D3300 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #7] !!! Returned IUnknown is IEnumVARIANT - wrapping enumerator!
+[3b74:25d0] [ENUM] Created enumerator proxy for 'FileSystemObject.GetFolder.SubFolders._NewEnum' (Original: 0x054D3300)
+[3b74:25d0] [PROXY #7] !!! Replaced with EnumVARIANT proxy
+[3b74:25d0] [ENUM] Destroying enumerator proxy for 'FileSystemObject.GetFolder.SubFolders._NewEnum'
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=2
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] QueryInterface: FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #7] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=4
+[3b74:25d0] [PROXY #7] QueryInterface: IUnknown for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=5
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=4
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [PROXY #7] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=4
+[3b74:25d0] [PROXY #7] AddRef: FileSystemObject.GetFolder.SubFolders -> RefCount=5
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=4
+[3b74:25d0] [PROXY #7] >>> Invoke: FileSystemObject.GetFolder.SubFolders._NewEnum (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #7] <<< Result: IUnknown:0x054D3300 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #7] !!! Returned IUnknown is IEnumVARIANT - wrapping enumerator!
+[3b74:25d0] [ENUM] Created enumerator proxy for 'FileSystemObject.GetFolder.SubFolders._NewEnum' (Original: 0x054D3300)
+[3b74:25d0] [PROXY #7] !!! Replaced with EnumVARIANT proxy
+[3b74:25d0] [PROXY #7] Release: FileSystemObject.GetFolder.SubFolders -> RefCount=3
+[3b74:25d0] [ENUM] >>> Next: Fetched 1 item(s) from 'FileSystemObject.GetFolder.SubFolders._NewEnum'
+[3b74:25d0] [PROXY] Created proxy #8 for FileSystemObject.GetFolder.SubFolders._NewEnum[item] (Original: 0x054D335C)
+[3b74:25d0] [ENUM] !!! Wrapped enumerated IDispatch item #0
+[3b74:25d0] [PROXY #8] QueryInterface: IUnknown for FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] Release: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #8] Release: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=1
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #8] Release: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #8] GetTypeInfoCount: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] GetTypeInfo: FileSystemObject.GetFolder.SubFolders._NewEnum[item] (Index=0)
+[3b74:25d0] [PROXY #8] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #8] >>> Invoke: FileSystemObject.GetFolder.SubFolders._NewEnum[item].Name (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #8] <<< Result: "$Recycle.Bin" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #8] Release: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #8] QueryInterface: IDispatch for FileSystemObject.GetFolder.SubFolders._NewEnum[item]
+[3b74:25d0] [PROXY #8] AddRef: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=3
+[3b74:25d0] [PROXY #8] >>> Invoke: FileSystemObject.GetFolder.SubFolders._NewEnum[item].ParentFolder (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #8] <<< Result: IDispatch:0x054D32B4 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [WRAP] Object 0x054D32B4 already proxied, returning existing
+[3b74:25d0] [PROXY #8] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #6] QueryInterface: IUnknown for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=4
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #8] Release: FileSystemObject.GetFolder.SubFolders._NewEnum[item] -> RefCount=2
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #6] QueryInterface: IDispatch for FileSystemObject.GetFolder
+[3b74:25d0] [PROXY #6] AddRef: FileSystemObject.GetFolder -> RefCount=3
+[3b74:25d0] [PROXY #6] >>> Invoke: FileSystemObject.GetFolder.Name (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #6] <<< Result: "" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #6] Release: FileSystemObject.GetFolder -> RefCount=2
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.CreateTextFile (METHOD PROPGET ) ArgCount=2
+[3b74:25d0] [PROXY #1]     Arg[0]: "C:\Users\home\AppData\Local\Temp\tmpv531zs.tmp"
+[3b74:25d0] [PROXY #1]     Arg[1]: True
+[3b74:25d0] [PROXY #1] <<< Result: IDispatch:0x054D33C0 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #9 for FileSystemObject.CreateTextFile (Original: 0x054D33C0)
+[3b74:25d0] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #9] QueryInterface: IUnknown for FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=3
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] Release: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #9] Release: FileSystemObject.CreateTextFile -> RefCount=1
+[3b74:25d0] [PROXY #9] QueryInterface: IDispatch for FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=3
+[3b74:25d0] [PROXY #9] Release: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #9] GetTypeInfoCount: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] GetTypeInfo: FileSystemObject.CreateTextFile (Index=0)
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: IDispatch for FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=3
+[3b74:25d0] [PROXY #9] >>> Invoke: FileSystemObject.CreateTextFile.WriteLine (METHOD PROPGET ) ArgCount=1
+[3b74:25d0] [PROXY #9]     Arg[0]: "test data"
+[3b74:25d0] [PROXY #9] <<< Result: (void) HRESULT=0x00000000
+[3b74:25d0] [PROXY #9] Release: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #9] QueryInterface: IDispatch for FileSystemObject.CreateTextFile
+[3b74:25d0] [PROXY #9] AddRef: FileSystemObject.CreateTextFile -> RefCount=3
+[3b74:25d0] [PROXY #9] >>> Invoke: FileSystemObject.CreateTextFile.Close (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #9] <<< Result: (void) HRESULT=0x00000000
+[3b74:25d0] [PROXY #9] Release: FileSystemObject.CreateTextFile -> RefCount=2
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: FileSystemObject
+[3b74:25d0] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[3b74:25d0] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[3b74:25d0] [PROXY #1] >>> Invoke: FileSystemObject.OpenTextFile (METHOD PROPGET ) ArgCount=2
+[3b74:25d0] [PROXY #1]     Arg[0]: "C:\Users\home\AppData\Local\Temp\tmpnpj2j1.tmp"
+[3b74:25d0] [PROXY #1]     Arg[1]: 1
+[3b74:25d0] [PROXY #1] <<< Result: IDispatch:0x054D3628 (HRESULT=0x00000000)
+[3b74:25d0] [PROXY] Created proxy #10 for FileSystemObject.OpenTextFile (Original: 0x054D3628)
+[3b74:25d0] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[3b74:25d0] [PROXY #10] QueryInterface: IUnknown for FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=3
+[3b74:25d0] [PROXY #10] QueryInterface: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #10] QueryInterface: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #10] QueryInterface: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #10] Release: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[3b74:25d0] [PROXY #10] Release: FileSystemObject.OpenTextFile -> RefCount=1
+[3b74:25d0] [PROXY #10] QueryInterface: IDispatch for FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=3
+[3b74:25d0] [PROXY #10] Release: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [PROXY #10] GetTypeInfoCount: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] GetTypeInfo: FileSystemObject.OpenTextFile (Index=0)
+[3b74:25d0] [PROXY #10] QueryInterface: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #10] QueryInterface: FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] QueryInterface passthrough: HRESULT=0x80004002
+[3b74:25d0] [PROXY #10] QueryInterface: IDispatch for FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=3
+[3b74:25d0] [PROXY #10] >>> Invoke: FileSystemObject.OpenTextFile.ReadLine (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #10] <<< Result: "line1" (HRESULT=0x00000000)
+[3b74:25d0] [PROXY #10] Release: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [PROXY #10] QueryInterface: IDispatch for FileSystemObject.OpenTextFile
+[3b74:25d0] [PROXY #10] AddRef: FileSystemObject.OpenTextFile -> RefCount=3
+[3b74:25d0] [PROXY #10] >>> Invoke: FileSystemObject.OpenTextFile.Close (METHOD PROPGET ) ArgCount=0
+[3b74:25d0] [PROXY #10] <<< Result: (void) HRESULT=0x00000000
+[3b74:25d0] [PROXY #10] Release: FileSystemObject.OpenTextFile -> RefCount=2
+[3b74:25d0] [SHUTDOWN] DispatchLogger unloading...
+[3b74:25d0] [SHUTDOWN] Complete

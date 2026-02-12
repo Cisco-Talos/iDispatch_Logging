@@ -1,0 +1,9 @@
+*.frm eol=crlf
+*.bas eol=crlf
+*.cls eol=crlf
+*.ctl eol=crlf
+*.vbp eol=crlf
+*.c eol=crlf
+*.cpp eol=crlf
+*.dsr eol=crlf
+*.dob eol=crlf

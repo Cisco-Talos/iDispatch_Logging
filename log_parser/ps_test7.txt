@@ -1,0 +1,324 @@
+[2ec0:4658] ========================================
+[2ec0:4658] [INIT] DispatchLogger injected into PID=11968
+[2ec0:4658] [INIT] Debug window: 0x003E0740
+[2ec0:4658] [INIT] CoCreateInstance at 0x76D3AD00
+[2ec0:4658] [INIT] Successfully hooked CoCreateInstance!
+[2ec0:4658] [INIT] Original function: 0x00F60000
+[2ec0:4658] [INIT] Hooked CoGetClassObject
+[2ec0:4658] [INIT] Hooked CLSIDFromProgID
+[2ec0:4658] [INIT] Hooked GetActiveObject
+[2ec0:4658] ========================================
+[2ec0:49c8] [HOOK] CoCreateInstance: CLSID={00000323-0000-0000-C000-000000000046} IID=Unknown ({00000146-0000-0000-C000-000000000046}) Context=0x00000001
+[2ec0:49c8] [HOOK] CoCreateInstance SUCCESS: Object=0x76EBF1E8
+[2ec0:49c8] [HOOK] Other interface requested: {00000146-0000-0000-C000-000000000046} - not wrapping
+[2ec0:1928] [CLSIDFromProgID] 'Scripting.FileSystemObject' -> {0D43FE01-F093-11CF-8940-00A0C9054228}
+[2ec0:1928] [CoGetClassObject] FileSystemObject ({0D43FE01-F093-11CF-8940-00A0C9054228}) Context=0x00000015
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [CoGetClassObject] Got IClassFactory for FileSystemObject - WRAPPING!
+[2ec0:1928] [FACTORY] Created factory proxy for FileSystemObject
+[2ec0:1928] [CoGetClassObject] !!! Factory wrapped!
+[2ec0:1928] [FACTORY] CreateInstance: FileSystemObject requesting IUnknown
+[2ec0:1928] [FACTORY] CreateInstance SUCCESS: Object at 0x00BC5BB8
+[2ec0:1928] [FACTORY] Object supports IDispatch - WRAPPING!
+[2ec0:1928] [PROXY] Created proxy #1 for FileSystemObject (Original: 0x00BC5BB8)
+[2ec0:1928] [FACTORY] !!! Replaced object with proxy!
+[2ec0:1928] [FACTORY] Destroying factory proxy for FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface: IUnknown for FileSystemObject
+[2ec0:1928] [PROXY #1] AddRef: FileSystemObject -> RefCount=2
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x00000000
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=1
+[2ec0:1928] [CLSIDFromProgID] 'WScript.Shell' -> {72C24DD5-D70A-438B-8A42-98424B88AFB8}
+[2ec0:1928] [CoGetClassObject] WScript.Shell ({72C24DD5-D70A-438B-8A42-98424B88AFB8}) Context=0x00000015
+[2ec0:1928] [CoGetClassObject] Got IClassFactory for WScript.Shell - WRAPPING!
+[2ec0:1928] [FACTORY] Created factory proxy for WScript.Shell
+[2ec0:1928] [CoGetClassObject] !!! Factory wrapped!
+[2ec0:1928] [FACTORY] CreateInstance: WScript.Shell requesting IUnknown
+[2ec0:1928] [FACTORY] CreateInstance SUCCESS: Object at 0x00BC5BEC
+[2ec0:1928] [FACTORY] Object supports IDispatch - WRAPPING!
+[2ec0:1928] [PROXY] Created proxy #2 for WScript.Shell (Original: 0x00BC5BD8)
+[2ec0:1928] [FACTORY] !!! Replaced object with proxy!
+[2ec0:1928] [FACTORY] Destroying factory proxy for WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface: IUnknown for WScript.Shell
+[2ec0:1928] [PROXY #2] AddRef: WScript.Shell -> RefCount=2
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x00000000
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] AddRef: WScript.Shell -> RefCount=3
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=2
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=1
+[2ec0:1928] [CLSIDFromProgID] 'Scripting.Dictionary' -> {EE09B103-97E0-11CF-978F-00A02463E06F}
+[2ec0:1928] [CoGetClassObject] Scripting.Dictionary ({EE09B103-97E0-11CF-978F-00A02463E06F}) Context=0x00000015
+[2ec0:1928] [CoGetClassObject] Got IClassFactory for Scripting.Dictionary - WRAPPING!
+[2ec0:1928] [FACTORY] Created factory proxy for Scripting.Dictionary
+[2ec0:1928] [CoGetClassObject] !!! Factory wrapped!
+[2ec0:1928] [FACTORY] CreateInstance: Scripting.Dictionary requesting IUnknown
+[2ec0:1928] [FACTORY] CreateInstance SUCCESS: Object at 0x00BC0538
+[2ec0:1928] [FACTORY] Object supports IDispatch - WRAPPING!
+[2ec0:1928] [PROXY] Created proxy #3 for Scripting.Dictionary (Original: 0x00BC0538)
+[2ec0:1928] [FACTORY] !!! Replaced object with proxy!
+[2ec0:1928] [FACTORY] Destroying factory proxy for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface: IUnknown for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x00000000
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=1
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: WScript.Shell
+[2ec0:1928] [PROXY #2] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #2] QueryInterface: IDispatch for WScript.Shell
+[2ec0:1928] [PROXY #2] AddRef: WScript.Shell -> RefCount=2
+[2ec0:1928] [PROXY #2] AddRef: WScript.Shell -> RefCount=3
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=2
+[2ec0:1928] [PROXY #2] GetTypeInfoCount: WScript.Shell
+[2ec0:1928] [PROXY #2] GetTypeInfo: WScript.Shell (Index=0)
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [PROXY #2] QueryInterface: IDispatch for WScript.Shell
+[2ec0:1928] [PROXY #2] AddRef: WScript.Shell -> RefCount=3
+[2ec0:1928] [PROXY #2] >>> Invoke: WScript.Shell.SpecialFolders (METHOD PROPGET ) ArgCount=0
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={1F486A52-3CB1-48FD-8F50-B8DC300D9F9D} IID=Unknown ({ECF31D61-E474-453C-BEE7-DE68E441C6D0}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x08840118
+[2ec0:1928] [HOOK] Other interface requested: {ECF31D61-E474-453C-BEE7-DE68E441C6D0} - not wrapping
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={0E5AAE11-A475-4C5B-AB00-C66DE400274E} IID=Unknown ({ADD8BA80-002B-11D0-8F0F-00C04FD7D062}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x087CBAD4
+[2ec0:1928] [HOOK] Other interface requested: {ADD8BA80-002B-11D0-8F0F-00C04FD7D062} - not wrapping
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={0E5AAE11-A475-4C5B-AB00-C66DE400274E} IID=Unknown ({000214E6-0000-0000-C000-000000000046}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x087CA2E8
+[2ec0:1928] [HOOK] Other interface requested: {000214E6-0000-0000-C000-000000000046} - not wrapping
+[2ec0:1928] [PROXY #2] <<< Result: IDispatch:0x00BC61F0 (HRESULT=0x00000000)
+[2ec0:1928] [PROXY] Created proxy #4 for WScript.Shell.SpecialFolders (Original: 0x00BC61F0)
+[2ec0:1928] [PROXY #2] !!! Wrapped returned IDispatch as new proxy
+[2ec0:1928] [PROXY #4] QueryInterface: IUnknown for WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] AddRef: WScript.Shell.SpecialFolders -> RefCount=2
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x00000000
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] AddRef: WScript.Shell.SpecialFolders -> RefCount=3
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=2
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=2
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=1
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #4] QueryInterface: IDispatch for WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] AddRef: WScript.Shell.SpecialFolders -> RefCount=2
+[2ec0:1928] [PROXY #4] AddRef: WScript.Shell.SpecialFolders -> RefCount=3
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=2
+[2ec0:1928] [PROXY #4] GetTypeInfoCount: WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] GetTypeInfo: WScript.Shell.SpecialFolders (Index=0)
+[2ec0:1928] [PROXY #4] QueryInterface: IDispatch for WScript.Shell.SpecialFolders
+[2ec0:1928] [PROXY #4] AddRef: WScript.Shell.SpecialFolders -> RefCount=3
+[2ec0:1928] [PROXY #4] >>> Invoke: WScript.Shell.SpecialFolders.Item (METHOD PROPGET ) ArgCount=1
+[2ec0:1928] [PROXY #4]     Arg[0]: "Desktop"
+[2ec0:1928] [PROXY #4] <<< Result: "C:\Users\home\Desktop" (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] GetTypeInfoCount: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] GetTypeInfo: Scripting.Dictionary (Index=0)
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [HOOK] CoCreateInstance: CLSID={00000346-0000-0000-C000-000000000046} IID=Unknown ({E085AD58-B839-4625-B40B-4CC546E82D75}) Context=0x00000001
+[2ec0:1928] [HOOK] CoCreateInstance SUCCESS: Object=0x76EC0058
+[2ec0:1928] [HOOK] Other interface requested: {E085AD58-B839-4625-B40B-4CC546E82D75} - not wrapping
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Add (METHOD PROPGET ) ArgCount=2
+[2ec0:1928] [PROXY #3]     Arg[0]: "desktop"
+[2ec0:1928] [PROXY #3]     Arg[1]: "C:\Users\home\Desktop"
+[2ec0:1928] [PROXY #3] <<< Result: (void) HRESULT=0x00000000
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: FileSystemObject
+[2ec0:1928] [PROXY #1] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[2ec0:1928] [PROXY #1] AddRef: FileSystemObject -> RefCount=2
+[2ec0:1928] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[2ec0:1928] [PROXY #1] GetTypeInfoCount: FileSystemObject
+[2ec0:1928] [PROXY #1] GetTypeInfo: FileSystemObject (Index=0)
+[2ec0:1928] [PROXY #1] QueryInterface: IDispatch for FileSystemObject
+[2ec0:1928] [PROXY #1] AddRef: FileSystemObject -> RefCount=3
+[2ec0:1928] [PROXY #1] >>> Invoke: FileSystemObject.GetSpecialFolder (METHOD PROPGET ) ArgCount=1
+[2ec0:1928] [PROXY #1]     Arg[0]: 2
+[2ec0:1928] [PROXY #1] <<< Result: IDispatch:0x00BC6274 (HRESULT=0x00000000)
+[2ec0:1928] [PROXY] Created proxy #5 for FileSystemObject.GetSpecialFolder (Original: 0x00BC6274)
+[2ec0:1928] [PROXY #1] !!! Wrapped returned IDispatch as new proxy
+[2ec0:1928] [PROXY #5] QueryInterface: IUnknown for FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] AddRef: FileSystemObject.GetSpecialFolder -> RefCount=2
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x00000000
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] AddRef: FileSystemObject.GetSpecialFolder -> RefCount=3
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=2
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=2
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=1
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #5] QueryInterface: IDispatch for FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] AddRef: FileSystemObject.GetSpecialFolder -> RefCount=2
+[2ec0:1928] [PROXY #5] AddRef: FileSystemObject.GetSpecialFolder -> RefCount=3
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=2
+[2ec0:1928] [PROXY #5] GetTypeInfoCount: FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] GetTypeInfo: FileSystemObject.GetSpecialFolder (Index=0)
+[2ec0:1928] [PROXY #5] QueryInterface: IDispatch for FileSystemObject.GetSpecialFolder
+[2ec0:1928] [PROXY #5] AddRef: FileSystemObject.GetSpecialFolder -> RefCount=3
+[2ec0:1928] [PROXY #5] >>> Invoke: FileSystemObject.GetSpecialFolder.Path (METHOD PROPGET ) ArgCount=0
+[2ec0:1928] [PROXY #5] <<< Result: "C:\Users\home\AppData\Local\Temp" (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Add (METHOD PROPGET ) ArgCount=2
+[2ec0:1928] [PROXY #3]     Arg[0]: "temp"
+[2ec0:1928] [PROXY #3]     Arg[1]: "C:\Users\home\AppData\Local\Temp"
+[2ec0:1928] [PROXY #3] <<< Result: (void) HRESULT=0x00000000
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Count (METHOD PROPGET ) ArgCount=0
+[2ec0:1928] [PROXY #3] <<< Result: 2 (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Keys (METHOD PROPGET ) ArgCount=0
+[2ec0:1928] [PROXY #3] <<< Result: Array(VT=0x200c) (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: Scripting.Dictionary
+[2ec0:1928] [PROXY #3] QueryInterface passthrough: HRESULT=0x80004002
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Item (METHOD PROPGET ) ArgCount=1
+[2ec0:1928] [PROXY #3]     Arg[0]: "desktop"
+[2ec0:1928] [PROXY #3] <<< Result: "C:\Users\home\Desktop" (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #3] QueryInterface: IDispatch for Scripting.Dictionary
+[2ec0:1928] [PROXY #3] AddRef: Scripting.Dictionary -> RefCount=3
+[2ec0:1928] [PROXY #3] >>> Invoke: Scripting.Dictionary.Item (METHOD PROPGET ) ArgCount=1
+[2ec0:1928] [PROXY #3]     Arg[0]: "temp"
+[2ec0:1928] [PROXY #3] <<< Result: "C:\Users\home\AppData\Local\Temp" (HRESULT=0x00000000)
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=2
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=1
+[2ec0:1928] [PROXY #5] Release: FileSystemObject.GetSpecialFolder -> RefCount=0
+[2ec0:1928] [PROXY] Destroying proxy #5 (FileSystemObject.GetSpecialFolder)
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=1
+[2ec0:1928] [PROXY #2] Release: WScript.Shell -> RefCount=0
+[2ec0:1928] [PROXY] Destroying proxy #2 (WScript.Shell)
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=1
+[2ec0:1928] [PROXY #1] Release: FileSystemObject -> RefCount=0
+[2ec0:1928] [PROXY] Destroying proxy #1 (FileSystemObject)
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=1
+[2ec0:1928] [PROXY #4] Release: WScript.Shell.SpecialFolders -> RefCount=0
+[2ec0:1928] [PROXY] Destroying proxy #4 (WScript.Shell.SpecialFolders)
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=1
+[2ec0:1928] [PROXY #3] Release: Scripting.Dictionary -> RefCount=0
+[2ec0:1928] [PROXY] Destroying proxy #3 (Scripting.Dictionary)
+[2ec0:49c8] [SHUTDOWN] DispatchLogger unloading...
+[2ec0:49c8] [SHUTDOWN] Complete
